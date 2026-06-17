@@ -450,3 +450,51 @@ footer{background:var(--ink);color:rgba(255,255,255,.45);padding:52px 0 0}
 [data-reveal-delay="4"]{transition-delay:.32s}
 @media(prefers-reduced-motion:reduce){[data-reveal]{opacity:1;transform:none;transition:none}.wa-ring,.pulse{animation:none}}
 @media(max-width:768px){section{padding:60px 0}.pkg-hero,.legal-hero{padding-top:110px}}
+
+/* ── Battery Bin recycling stat bar ── */
+.battery-stat-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  background: rgba(56,142,60,.15);
+  border: 1px solid rgba(56,142,60,.3);
+  border-radius: 6px;
+  padding: 6px 10px;
+}
+
+.battery-stat-num {
+  font-family: monospace;
+  font-size: .72rem;
+  font-weight: 800;
+  color: #a5d6a7;
+}
+
+.battery-stat-lbl {
+  font-size: .42rem;
+  color: rgba(165,214,167,.65);
+  letter-spacing: .04em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ── Navbar Instagram icon ── */
+.nav-insta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  color: var(--muted);
+  transition: all var(--t);
+  border: 1.5px solid var(--border);
+  flex-shrink: 0;
+}
+
+.nav-insta:hover {
+  color: #E1306C;
+  border-color: #E1306C;
+  background: #fff0f5;
+  transform: scale(1.08);
+}
