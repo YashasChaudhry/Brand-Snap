@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Local Businesses in Ghaziabad | Brand Snap Directory</title>
+  <meta name="description" content="Discover trusted local businesses in Ghaziabad — restaurants, tuition centers, shops, salons, and more. Browse verified listings on Brand Snap's local business directory." />
+  <meta name="keywords" content="local businesses Ghaziabad, best restaurants Ghaziabad, tuition centers Ghaziabad, salons Ghaziabad, local services Ghaziabad, business directory" />
+  <meta property="og:title" content="Discover Trusted Local Businesses in Ghaziabad | Brand Snap" />
+  <meta property="og:description" content="Browse verified local businesses across Ghaziabad on Brand Snap Directory." />
+  <meta property="og:url" content="https://thebrandsnap.in/local-businesses" />
+  <link rel="canonical" href="https://thebrandsnap.in/local-businesses" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #0f172a; --ink-2: #334155; --ink-3: #64748b; --ink-4: #94a3b8;
+      --surface: #ffffff; --surface-2: #f8fafc; --surface-3: #f1f5f9;
+      --border: #e2e8f0; --border-2: #cbd5e1;
+      --accent: #4f46e5; --accent-h: #4338ca; --accent-bg: #eef2ff;
+      --wa: #25d366; --wa-h: #1ebe5d;
+      --gold: #f59e0b; --green: #10b981; --green-bg: #ecfdf5;
+      --r: 12px; --rl: 18px; --rxl: 24px;
+      --s1: 0 1px 2px rgba(0,0,0,.06);
+      --s2: 0 1px 3px rgba(0,0,0,.08),0 1px 2px rgba(0,0,0,.06);
+      --s3: 0 4px 16px rgba(0,0,0,.08),0 1px 4px rgba(0,0,0,.04);
+      --s4: 0 10px 40px rgba(0,0,0,.12),0 4px 12px rgba(0,0,0,.06);
+      --s5: 0 20px 60px rgba(0,0,0,.16),0 8px 20px rgba(0,0,0,.08);
+      --font: 'Inter',-apple-system,BlinkMacSystemFont,sans-serif;
+    }
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth;-webkit-font-smoothing:antialiased}
+    body{font-family:var(--font);color:var(--ink);background:var(--surface);line-height:1.6;font-size:15px}
+    img{display:block;max-width:100%}
+    a{color:inherit;text-decoration:none}
+    button{cursor:pointer;border:none;background:none;font-family:inherit}
+    .container{max-width:1160px;margin:0 auto;padding:0 24px}
+
+    /* NAV */
+    .nav{position:sticky;top:0;z-index:100;background:rgba(255,255,255,.95);backdrop-filter:blur(16px) saturate(180%);border-bottom:1px solid var(--border)}
+    .nav-inner{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:1160px;margin:0 auto;padding:0 24px;gap:16px}
+    .nav-logo{display:flex;align-items:center;gap:9px;font-size:1.05rem;font-weight:700;color:var(--ink);letter-spacing:-.01em;flex-shrink:0}
+    .nav-logo img{width:32px;height:32px;object-fit:contain}
+    .nav-links{display:flex;align-items:center;gap:4px}
+    .nav-links a{font-size:.875rem;font-weight:500;color:var(--ink-2);padding:6px 12px;border-radius:6px;transition:all .15s}
+    .nav-links a:hover{background:var(--surface-3);color:var(--ink)}
+    .nav-links a[aria-current]{color:var(--accent)}
+    .nav-actions{display:flex;align-items:center;gap:8px;flex-shrink:0}
+    .btn-wa{display:flex;align-items:center;gap:7px;background:var(--wa);color:white;font-size:.83rem;font-weight:600;padding:8px 16px;border-radius:6px;transition:all .15s;white-space:nowrap}
+    .btn-wa:hover{background:var(--wa-h);transform:translateY(-1px);box-shadow:0 4px 12px rgba(37,211,102,.3)}
+    .nav-mob{display:none}
+
+    /* HERO */
+    .hero{background:#0f172a;padding:80px 24px 72px;position:relative;overflow:hidden}
+    .hero::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 70% 50% at 75% 50%,rgba(79,70,229,.18) 0%,transparent 65%),radial-gradient(ellipse 40% 60% at 5% 100%,rgba(37,211,102,.07) 0%,transparent 55%)}
+    .hero::after{content:'';position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.022) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.022) 1px,transparent 1px);background-size:48px 48px}
+    .hero-inner{position:relative;z-index:1;max-width:680px}
+    .hero-badge{display:inline-flex;align-items:center;gap:7px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.06);color:#94a3b8;font-size:.72rem;font-weight:600;letter-spacing:.07em;text-transform:uppercase;padding:5px 13px;border-radius:100px;margin-bottom:24px}
+    .hero-dot{width:6px;height:6px;border-radius:50%;background:var(--wa);flex-shrink:0}
+    .hero h1{font-size:clamp(2rem,5.5vw,3.4rem);font-weight:900;line-height:1.08;letter-spacing:-.035em;color:#fff;margin-bottom:20px}
+    .hero h1 .hi{color:#a5b4fc}
+    .hero-sub{font-size:clamp(.9rem,1.8vw,1.05rem);color:#94a3b8;line-height:1.7;margin-bottom:36px;max-width:540px}
+
+    /* SEARCH */
+    .search-wrap{margin-bottom:36px;max-width:560px}
+    .search-box{display:flex;background:#fff;border-radius:var(--r);box-shadow:0 8px 32px rgba(0,0,0,.4);overflow:hidden}
+    .si{display:flex;align-items:center;padding:0 14px;color:var(--ink-3);flex-shrink:0}
+    .search-box input{flex:1;border:none;outline:none;font-family:var(--font);font-size:.9rem;color:var(--ink);padding:14px 0;background:transparent;min-width:0}
+    .search-box input::placeholder{color:var(--ink-4)}
+    .search-btn{background:var(--accent);color:#fff;font-family:var(--font);font-weight:600;font-size:.875rem;padding:0 20px;flex-shrink:0;transition:background .15s}
+    .search-btn:hover{background:var(--accent-h)}
+
+    .hero-pills{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:40px}
+    .hpill{display:flex;align-items:center;gap:5px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);color:#cbd5e1;font-size:.79rem;font-weight:500;padding:6px 14px;border-radius:100px;transition:all .15s;white-space:nowrap;cursor:pointer}
+    .hpill:hover,.hpill.active{background:rgba(255,255,255,.15);border-color:rgba(255,255,255,.25);color:#fff}
+
+    .hero-stats{display:flex;flex-wrap:wrap;gap:32px}
+    .hs-num{font-size:1.55rem;font-weight:800;color:#fff;letter-spacing:-.03em;line-height:1;display:block}
+    .hs-lbl{font-size:.73rem;color:#64748b;margin-top:3px;display:block}
+
+    /* SECTIONS */
+    .section{padding:72px 0}
+    .section-alt{background:var(--surface-2)}
+    .eyebrow{font-size:.71rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+    .stitle{font-size:clamp(1.5rem,3vw,2rem);font-weight:800;letter-spacing:-.025em;line-height:1.18;color:var(--ink);margin-bottom:8px}
+    .ssub{color:var(--ink-3);font-size:.91rem;max-width:460px;line-height:1.65}
+
+    /* FEATURED */
+    .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+    .feat-card{border-radius:var(--rl);overflow:hidden;padding:28px 24px;color:white;position:relative;min-height:210px;display:flex;flex-direction:column;justify-content:flex-end;transition:transform .2s,box-shadow .2s;cursor:pointer}
+    .feat-card:hover{transform:translateY(-4px);box-shadow:var(--s5)}
+    .feat-card::before{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.55) 0%,transparent 60%)}
+    .feat-inner{position:relative;z-index:1}
+    .feat-emoji{font-size:2.3rem;margin-bottom:12px;display:block}
+    .feat-verified{display:inline-flex;align-items:center;gap:4px;font-size:.67rem;font-weight:600;color:#86efac;background:rgba(16,185,129,.18);border:1px solid rgba(16,185,129,.25);padding:2px 8px;border-radius:100px;margin-bottom:9px}
+    .feat-name{font-size:1.08rem;font-weight:800;letter-spacing:-.02em;margin-bottom:2px;line-height:1.2}
+    .feat-cat{font-size:.73rem;opacity:.65;margin-bottom:14px}
+    .feat-btn{display:inline-flex;align-items:center;gap:5px;background:rgba(255,255,255,.18);border:1px solid rgba(255,255,255,.25);color:white;font-size:.76rem;font-weight:600;padding:6px 14px;border-radius:100px;transition:background .15s;cursor:pointer;font-family:var(--font)}
+    .feat-btn:hover{background:rgba(255,255,255,.28)}
+
+    /* FILTER BAR */
+    .filter-bar{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:12px;margin-bottom:26px}
+    .ftabs{display:flex;flex-wrap:wrap;gap:6px}
+    .ftab{font-family:var(--font);font-size:.81rem;font-weight:500;padding:7px 15px;border-radius:100px;transition:all .15s;border:1.5px solid var(--border);color:var(--ink-3);background:white;cursor:pointer}
+    .ftab:hover{border-color:var(--accent);color:var(--accent)}
+    .ftab.active{background:var(--ink);border-color:var(--ink);color:white;font-weight:600}
+    .fmeta{display:flex;align-items:center;gap:12px}
+    .fcount{font-size:.81rem;color:var(--ink-3);white-space:nowrap}
+    .fsel{border:1.5px solid var(--border);border-radius:6px;padding:7px 10px;font-family:var(--font);font-size:.81rem;color:var(--ink-2);background:white;outline:none;cursor:pointer}
+
+    /* GRID */
+    .biz-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(340px,1fr));gap:20px}
+
+    /* CARD */
+    .biz-card{background:white;border-radius:var(--rl);border:1px solid var(--border);box-shadow:var(--s1);overflow:hidden;display:flex;flex-direction:column;transition:box-shadow .2s,transform .2s,border-color .2s}
+    .biz-card:hover{box-shadow:var(--s4);transform:translateY(-3px);border-color:var(--border-2)}
+    .card-top{height:148px;position:relative;overflow:hidden;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+    .card-top img{width:100%;height:100%;object-fit:cover}
+    .ct-emoji{font-size:3.2rem;opacity:.22}
+    .ct-cat{position:absolute;top:12px;left:12px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);border-radius:100px;padding:3px 10px;font-size:.69rem;font-weight:700;color:var(--ink-2);display:flex;align-items:center;gap:4px;box-shadow:var(--s1)}
+    .ct-feat{position:absolute;top:12px;right:12px;background:linear-gradient(135deg,#f59e0b,#ef4444);color:white;font-size:.64rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase;padding:3px 9px;border-radius:100px}
+    .card-body{padding:18px 18px 14px;flex:1;display:flex;flex-direction:column;gap:10px}
+    .card-hd{display:flex;align-items:flex-start;gap:12px}
+    .card-logo{width:46px;height:46px;border-radius:10px;border:1px solid var(--border);background:var(--surface-3);overflow:hidden;flex-shrink:0;display:flex;align-items:center;justify-content:center;font-size:1.35rem}
+    .card-logo img{width:100%;height:100%;object-fit:contain;padding:4px}
+    .card-ti{flex:1;min-width:0}
+    .card-name{font-size:.975rem;font-weight:700;color:var(--ink);line-height:1.25;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;letter-spacing:-.01em}
+    .card-cat{font-size:.72rem;font-weight:500;color:var(--accent);margin-top:2px}
+    .card-desc{font-size:.82rem;color:var(--ink-3);line-height:1.6}
+    .card-meta{display:flex;flex-direction:column;gap:4px}
+    .cm{display:flex;align-items:center;gap:6px;font-size:.77rem;color:var(--ink-3)}
+    .cm svg{flex-shrink:0;color:var(--ink-4)}
+    .card-rating{display:flex;align-items:center;gap:6px}
+    .stars{display:flex;gap:1px}
+    .star{font-size:.77rem;color:var(--gold)}
+    .star.e{opacity:.22}
+    .rscore{font-size:.81rem;font-weight:700;color:var(--ink)}
+    .rn{font-size:.74rem;color:var(--ink-4)}
+    .vpill{margin-left:auto;display:flex;align-items:center;gap:3px;font-size:.67rem;font-weight:600;color:var(--green);background:var(--green-bg);padding:2px 8px;border-radius:100px}
+    .card-foot{padding:12px 18px 16px;display:flex;gap:8px;border-top:1px solid var(--surface-3)}
+    .cb{flex:1;text-align:center;font-family:var(--font);font-size:.79rem;font-weight:600;padding:9px 10px;border-radius:6px;transition:all .15s;display:flex;align-items:center;justify-content:center;gap:5px;cursor:pointer}
+    .cb-g{border:1.5px solid var(--border);color:var(--ink-2);background:white}
+    .cb-g:hover{border-color:var(--accent);color:var(--accent);background:var(--accent-bg)}
+    .cb-s{background:var(--ink);color:white;border:1.5px solid var(--ink)}
+    .cb-s:hover{background:var(--ink-2)}
+
+    .no-res{text-align:center;padding:56px 20px;color:var(--ink-3);display:none}
+    .no-res p{font-size:.9rem;margin-top:12px}
+    .lm-wrap{text-align:center;margin-top:40px}
+    .lm-btn{display:inline-flex;align-items:center;gap:8px;border:2px solid var(--border);color:var(--ink-2);background:white;font-family:var(--font);font-weight:600;font-size:.875rem;padding:12px 28px;border-radius:var(--r);transition:all .18s;cursor:pointer}
+    .lm-btn:hover{border-color:var(--ink);color:var(--ink)}
+
+    /* BENEFITS */
+    .ben-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:16px}
+    .ben-card{background:white;border:1px solid var(--border);border-radius:var(--r);padding:22px;transition:box-shadow .18s,transform .18s}
+    .ben-card:hover{box-shadow:var(--s3);transform:translateY(-2px)}
+    .ben-icon{width:42px;height:42px;border-radius:10px;background:var(--accent-bg);display:flex;align-items:center;justify-content:center;font-size:1.2rem;margin-bottom:13px}
+    .ben-title{font-size:.9rem;font-weight:700;color:var(--ink);margin-bottom:6px}
+    .ben-desc{font-size:.79rem;color:var(--ink-3);line-height:1.65}
+
+    /* CTA BAND */
+    .cta-band{background:#0f172a;padding:72px 24px;text-align:center;position:relative;overflow:hidden}
+    .cta-band::before{content:'';position:absolute;inset:0;pointer-events:none;background:radial-gradient(ellipse 60% 70% at 50% 110%,rgba(79,70,229,.22) 0%,transparent 65%)}
+    .cta-band::after{content:'';position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(255,255,255,.02) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.02) 1px,transparent 1px);background-size:48px 48px}
+    .cta-i{position:relative;z-index:1}
+    .cta-band h2{font-size:clamp(1.5rem,3.5vw,2.2rem);font-weight:900;color:white;letter-spacing:-.03em;margin-bottom:12px}
+    .cta-band p{color:#64748b;margin-bottom:28px;font-size:.93rem}
+    .cta-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+    .cta-wa{display:flex;align-items:center;gap:8px;background:var(--wa);color:white;font-weight:700;font-size:.9rem;padding:13px 24px;border-radius:6px;transition:all .18s}
+    .cta-wa:hover{background:var(--wa-h);transform:translateY(-2px);box-shadow:0 8px 24px rgba(37,211,102,.3)}
+    .cta-ph{background:rgba(255,255,255,.08);border:1.5px solid rgba(255,255,255,.15);color:white;font-weight:600;font-size:.9rem;padding:13px 24px;border-radius:6px;transition:all .18s}
+    .cta-ph:hover{background:rgba(255,255,255,.14)}
+
+    /* FOOTER */
+    .footer{background:#0f172a;color:#475569;padding:56px 24px 28px}
+    .foot-grid{max-width:1160px;margin:0 auto;display:grid;grid-template-columns:1.8fr 1fr 1fr 1fr;gap:48px;margin-bottom:44px}
+    .foot-logo{display:flex;align-items:center;gap:9px;font-size:1rem;font-weight:700;color:white;margin-bottom:13px}
+    .foot-logo img{width:30px;height:30px;object-fit:contain}
+    .foot-brand p{font-size:.79rem;line-height:1.7;max-width:210px;color:#475569}
+    .foot-col h4{font-size:.7rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#94a3b8;margin-bottom:14px}
+    .foot-col a{display:block;font-size:.79rem;color:#475569;margin-bottom:9px;transition:color .15s}
+    .foot-col a:hover{color:#e2e8f0}
+    .foot-bottom{max-width:1160px;margin:0 auto;border-top:1px solid rgba(255,255,255,.07);padding-top:20px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:8px}
+    .foot-bottom p{font-size:.74rem;color:#334155}
+    .foot-bottom a{color:#334155;text-decoration:underline}
+
+    /* MODAL */
+    .overlay{position:fixed;inset:0;background:rgba(15,23,42,.7);z-index:999;display:flex;align-items:center;justify-content:center;padding:20px;opacity:0;pointer-events:none;transition:opacity .22s;backdrop-filter:blur(4px)}
+    .overlay.open{opacity:1;pointer-events:all}
+    .modal{background:white;border-radius:var(--rxl);max-width:680px;width:100%;max-height:90vh;overflow-y:auto;box-shadow:0 32px 80px rgba(0,0,0,.3);transform:translateY(16px) scale(.98);transition:transform .22s}
+    .overlay.open .modal{transform:translateY(0) scale(1)}
+    .m-hero{height:180px;position:relative;overflow:hidden;display:flex;align-items:flex-end;padding:20px 24px}
+    .m-hero::after{content:'';position:absolute;inset:0;background:linear-gradient(to top,rgba(0,0,0,.6) 0%,transparent 60%)}
+    .m-close{position:absolute;top:14px;right:14px;z-index:2;width:34px;height:34px;border-radius:50%;background:rgba(255,255,255,.15);backdrop-filter:blur(8px);color:white;font-size:1rem;display:flex;align-items:center;justify-content:center;transition:background .15s;cursor:pointer;border:none;font-family:var(--font)}
+    .m-close:hover{background:rgba(255,255,255,.25)}
+    .m-id{position:relative;z-index:1;display:flex;align-items:center;gap:12px}
+    .m-logobox{width:52px;height:52px;border-radius:10px;background:white;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,.2);flex-shrink:0;overflow:hidden;font-size:1.6rem}
+    .m-logobox img{width:100%;height:100%;object-fit:contain;padding:4px}
+    .m-biz-name{font-size:1.18rem;font-weight:800;color:white;letter-spacing:-.02em;line-height:1.2}
+    .m-biz-cat{font-size:.73rem;color:rgba(255,255,255,.65);margin-top:2px}
+    .m-body{padding:24px}
+    .m-sec{margin-bottom:22px}
+    .m-sec-t{font-size:.69rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--ink-3);margin-bottom:10px}
+    .m-sec p{font-size:.85rem;color:var(--ink-2);line-height:1.7}
+    .ig{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+    .ibox{background:var(--surface-2);border-radius:6px;padding:12px 14px}
+    .ibox .l{font-size:.67rem;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--ink-4);margin-bottom:4px}
+    .ibox .v{font-size:.83rem;font-weight:500;color:var(--ink);word-break:break-word}
+    .hlist{display:grid;grid-template-columns:1fr 1fr;gap:0}
+    .hrow{display:flex;justify-content:space-between;font-size:.79rem;padding:6px 0;border-bottom:1px solid var(--border);color:var(--ink-2)}
+    .hrow span:first-child{font-weight:500;color:var(--ink)}
+    .rv{background:var(--surface-2);border-radius:6px;padding:13px 14px;margin-bottom:8px}
+    .rv-name{font-size:.81rem;font-weight:600;color:var(--ink)}
+    .rv-stars{color:var(--gold);font-size:.74rem;margin:2px 0 6px}
+    .rv-text{font-size:.8rem;color:var(--ink-3);line-height:1.6}
+    .fq{border-bottom:1px solid var(--border);padding:11px 0}
+    .fq-q{font-size:.84rem;font-weight:600;color:var(--ink);margin-bottom:5px}
+    .fq-a{font-size:.8rem;color:var(--ink-3);line-height:1.6}
+    .map-ph{background:var(--surface-3);border-radius:6px;height:90px;display:flex;align-items:center;justify-content:center;gap:7px;font-size:.81rem;color:var(--ink-3);margin-top:10px}
+    .m-actions{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px;padding-top:16px;border-top:1px solid var(--border)}
+    .m-actions a,.m-actions button{display:inline-flex;align-items:center;gap:6px;font-family:var(--font);font-size:.81rem;font-weight:600;padding:9px 18px;border-radius:6px;transition:all .15s}
+    .mb-wa{background:var(--wa);color:white}
+    .mb-wa:hover{background:var(--wa-h)}
+    .mb-web{background:var(--accent);color:white}
+    .mb-web:hover{background:var(--accent-h)}
+    .mb-cl{border:1.5px solid var(--border);color:var(--ink-2);background:white;cursor:pointer}
+    .mb-cl:hover{background:var(--surface-2)}
+
+    @media(max-width:900px){.feat-grid{grid-template-columns:1fr}}
+    @media(max-width:768px){
+      .nav-links{display:none}.nav-mob{display:flex}.hero{padding:60px 20px 56px}.section{padding:52px 0}
+      .biz-grid{grid-template-columns:1fr}.foot-grid{grid-template-columns:1fr 1fr;gap:28px}
+      .ig{grid-template-columns:1fr}.hlist{grid-template-columns:1fr}
+    }
+    @media(max-width:480px){
+      .ftabs{gap:5px}.ftab{font-size:.75rem;padding:6px 11px}.foot-grid{grid-template-columns:1fr}
+      .cta-btns{flex-direction:column;align-items:center}.hero-stats{gap:20px}
+    }
+  </style>
+</head>
+<body>
+
+<nav class="nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <a href="https://thebrandsnap.in" class="nav-logo">
+      <img src="logo.png" alt="Brand Snap" />BrandSnap
+    </a>
+    <div class="nav-links">
+      <a href="https://thebrandsnap.in/local-businesses" aria-current="page">Directory</a>
+      <a href="https://thebrandsnap.in/#services">Services</a>
+      <a href="https://thebrandsnap.in/packages.html">Packages</a>
+      <a href="https://thebrandsnap.in/#about">About</a>
+      <a href="https://thebrandsnap.in/#contact">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <a href="https://wa.me/919811446304?text=Hi%20Brand%20Snap%2C%20I%20want%20to%20list%20my%20business%20on%20your%20directory." target="_blank" rel="noopener" class="btn-wa">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        List Your Business
+      </a>
+    </div>
+    <div class="nav-mob">
+      <a href="https://wa.me/919811446304?text=Hi%20Brand%20Snap%2C%20I%20want%20to%20list%20my%20business%20on%20your%20directory." target="_blank" rel="noopener" class="btn-wa" style="padding:8px 12px;">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<section class="hero" aria-labelledby="hero-h1">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-badge"><span class="hero-dot"></span>Ghaziabad's Business Directory</div>
+      <h1 id="hero-h1">Discover <span class="hi">Trusted</span><br>Local Businesses</h1>
+      <p class="hero-sub">Explore restaurants, tuition centers, shops, salons, and other businesses across Ghaziabad and nearby areas — all in one place.</p>
+      <div class="search-wrap">
+        <div class="search-box" role="search">
+          <span class="si" aria-hidden="true"><svg width="17" height="17" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg></span>
+          <input type="text" id="searchInput" placeholder="Search businesses, categories, areas…" aria-label="Search businesses" />
+          <button class="search-btn" onclick="doSearch()">Search</button>
+        </div>
+      </div>
+      <div class="hero-pills" role="group" aria-label="Category filter">
+        <button class="hpill active" onclick="setFilter('all',this)">🏢 All</button>
+        <button class="hpill" onclick="setFilter('restaurants',this)">🍽️ Restaurants</button>
+        <button class="hpill" onclick="setFilter('tuition',this)">📚 Tuition</button>
+        <button class="hpill" onclick="setFilter('shops',this)">🛍️ Shops</button>
+        <button class="hpill" onclick="setFilter('salons',this)">✂️ Salons</button>
+        <button class="hpill" onclick="setFilter('services',this)">🔧 Services</button>
+        <button class="hpill" onclick="setFilter('healthcare',this)">🏥 Healthcare</button>
+      </div>
+      <div class="hero-stats">
+        <div><span class="hs-num">5+</span><span class="hs-lbl">Listed Businesses</span></div>
+        <div><span class="hs-num">7</span><span class="hs-lbl">Categories</span></div>
+        <div><span class="hs-num">4.7★</span><span class="hs-lbl">Avg Rating</span></div>
+        <div><span class="hs-num">100%</span><span class="hs-lbl">Verified</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FEATURED -->
+<section class="section" aria-labelledby="feat-title">
+  <div class="container">
+    <p class="eyebrow">Highlighted Picks</p>
+    <h2 class="stitle" id="feat-title">Featured Businesses</h2>
+    <p class="ssub">Hand-picked businesses delivering exceptional quality and service in Ghaziabad.</p>
+    <div class="feat-grid">
+      <div class="feat-card" style="background:linear-gradient(145deg,#1a0a04,#7c2d12);">
+        <div class="feat-inner">
+          <span class="feat-emoji">🍛</span>
+          <div class="feat-verified">✓ Verified</div>
+          <div class="feat-name">Dal Cheeni</div>
+          <div class="feat-cat">Restaurant · Kavi Nagar, Ghaziabad</div>
+          <button class="feat-btn" onclick="openProfile('dal-cheeni')">View Profile →</button>
+        </div>
+      </div>
+      <div class="feat-card" style="background:linear-gradient(145deg,#052e16,#14532d);">
+        <div class="feat-inner">
+          <span class="feat-emoji">📐</span>
+          <div class="feat-verified">✓ Verified</div>
+          <div class="feat-name">Devendra Sir Classes</div>
+          <div class="feat-cat">Tuition · Kavi Nagar, Ghaziabad</div>
+          <button class="feat-btn" onclick="openProfile('devendra-sir')">View Profile →</button>
+        </div>
+      </div>
+      <div class="feat-card" style="background:linear-gradient(145deg,#1e1b4b,#3730a3);">
+        <div class="feat-inner">
+          <span class="feat-emoji">⌚</span>
+          <div class="feat-verified">✓ Verified</div>
+          <div class="feat-name">A.Sons Exclusives</div>
+          <div class="feat-cat">Watch Store · Ashok Nagar, Ghaziabad</div>
+          <button class="feat-btn" onclick="openProfile('a-sons')">View Profile →</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIRECTORY -->
+<section class="section section-alt" id="directory" aria-labelledby="dir-title">
+  <div class="container">
+    <div style="margin-bottom:28px;">
+      <p class="eyebrow">All Listings</p>
+      <h2 class="stitle" id="dir-title">Local Business Directory</h2>
+      <p class="ssub">Verified businesses across Ghaziabad — browse by category or search above.</p>
+    </div>
+    <div class="filter-bar">
+      <div class="ftabs" role="group" aria-label="Category filter">
+        <button class="ftab active" data-filter="all" onclick="setFilter('all',this)">All Businesses</button>
+        <button class="ftab" data-filter="restaurants" onclick="setFilter('restaurants',this)">🍽️ Restaurants</button>
+        <button class="ftab" data-filter="tuition" onclick="setFilter('tuition',this)">📚 Tuition</button>
+        <button class="ftab" data-filter="shops" onclick="setFilter('shops',this)">🛍️ Shops</button>
+        <button class="ftab" data-filter="salons" onclick="setFilter('salons',this)">✂️ Salons</button>
+        <button class="ftab" data-filter="services" onclick="setFilter('services',this)">🔧 Services</button>
+        <button class="ftab" data-filter="healthcare" onclick="setFilter('healthcare',this)">🏥 Healthcare</button>
+      </div>
+      <div class="fmeta">
+        <select class="fsel" aria-label="Sort by"><option>Highest Rated</option><option>Most Reviewed</option><option>A–Z</option></select>
+        <span class="fcount" id="bizCount">Showing 5 businesses</span>
+      </div>
+    </div>
+
+    <div class="biz-grid" id="bizGrid">
+
+      <!-- Dal Cheeni -->
+      <article class="biz-card" data-cat="restaurants" data-name="dal cheeni restaurant north indian chinese kebab kavi nagar ghaziabad">
+        <div class="card-top" style="background:linear-gradient(135deg,#7c2d12,#b45309);">
+          <span class="ct-emoji">🍛</span>
+          <div class="ct-cat">🍽️ Restaurant</div>
+          <div class="ct-feat">Featured</div>
+        </div>
+        <div class="card-body">
+          <div class="card-hd">
+            <div class="card-logo">🍛</div>
+            <div class="card-ti">
+              <div class="card-name">Dal Cheeni</div>
+              <div class="card-cat">Restaurant</div>
+            </div>
+          </div>
+          <p class="card-desc">Authentic North Indian, Chinese & kebab cuisine in Kavi Nagar. Family-friendly dining with indoor seating, takeaway & home delivery. ~&#8377;1,000 for two.</p>
+          <div class="card-meta">
+            <div class="cm"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Kavi Nagar, Ghaziabad UP 201002</div>
+            <div class="cm"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Open Daily · 12:00 PM – 11:00 PM</div>
+          </div>
+          <div class="card-rating">
+            <div class="stars" aria-label="4.7 stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <span class="rscore">4.7</span><span class="rn">(142 reviews)</span>
+            <div class="vpill">✓ Verified</div>
+          </div>
+        </div>
+        <div class="card-foot">
+          <a href="https://dalcheeni.thebrandsnap.in" target="_blank" rel="noopener" class="cb cb-g">🌐 Website</a>
+          <button class="cb cb-s" onclick="openProfile('dal-cheeni')">View Profile</button>
+        </div>
+      </article>
+
+      <!-- Devendra Sir -->
+      <article class="biz-card" data-cat="tuition" data-name="devendra sir classes maths science cbse kavi nagar ghaziabad coaching">
+        <div class="card-top" style="background:linear-gradient(135deg,#052e16,#15803d);">
+          <span class="ct-emoji">📐</span>
+          <div class="ct-cat">📚 Tuition</div>
+          <div class="ct-feat">Featured</div>
+        </div>
+        <div class="card-body">
+          <div class="card-hd">
+            <div class="card-logo">📐</div>
+            <div class="card-ti">
+              <div class="card-name">Devendra Sir Classes</div>
+              <div class="card-cat">Tuition Center</div>
+            </div>
+          </div>
+          <p class="card-desc">Expert CBSE Maths & Science coaching for Classes 6–10. Concept-based learning, small batches, online + offline + hybrid in Kavi Nagar.</p>
+          <div class="card-meta">
+            <div class="cm"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Kavi Nagar, Ghaziabad</div>
+            <div class="cm"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Mon–Sat · Morning & Evening Batches</div>
+          </div>
+          <div class="card-rating">
+            <div class="stars" aria-label="4.9 stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <span class="rscore">4.9</span><span class="rn">(218 reviews)</span>
+            <div class="vpill">✓ Verified</div>
+          </div>
+        </div>
+        <div class="card-foot">
+          <a href="https://homeschooling.thebrandsnap.in" target="_blank" rel="noopener" class="cb cb-g">🌐 Website</a>
+          <button class="cb cb-s" onclick="openProfile('devendra-sir')">View Profile</button>
+        </div>
+      </article>
+
+      <!-- A.Sons Exclusives -->
+      <article class="biz-card" data-cat="shops" data-name="a sons exclusives watch store branded premium watches ashok nagar ghaziabad">
+        <div class="card-top" style="background:linear-gradient(135deg,#1e1b4b,#4338ca);">
+          <span class="ct-emoji">⌚</span>
+          <div class="ct-cat">🛍️ Watch Store</div>
+          <div class="ct-feat">Featured</div>
+        </div>
+        <div class="card-body">
+          <div class="card-hd">
+            <div class="card-logo">⌚</div>
+            <div class="card-ti">
+              <div class="card-name">A.Sons Exclusives</div>
+              <div class="card-cat">Shops & Retail</div>
+            </div>
+          </div>
+          <p class="card-desc">Ghaziabad's trusted destination for authentic branded & premium watches. Expert guidance, 100% authentic products, 4.3★ on Google with 90+ reviews.</p>
+          <div class="card-meta">
+            <div class="cm"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Ashok Nagar, Ghaziabad</div>
+            <div class="cm"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Daily · 10 AM – 9 PM</div>
+          </div>
+          <div class="card-rating">
+            <div class="stars" aria-label="4.3 stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star e">★</span></div>
+            <span class="rscore">4.3</span><span class="rn">(90+ reviews)</span>
+            <div class="vpill">✓ Verified</div>
+          </div>
+        </div>
+        <div class="card-foot">
+          <a href="https://asons-exclusives.thebrandsnap.in/#trust" target="_blank" rel="noopener" class="cb cb-g">🌐 Website</a>
+          <button class="cb cb-s" onclick="openProfile('a-sons')">View Profile</button>
+        </div>
+      </article>
+
+      <!-- Anju Ma'am -->
+      <article class="biz-card" data-cat="tuition" data-name="anju maam cbse tuition hindi social science sst humanities ghaziabad classes 8 9 10 11 12">
+        <div class="card-top" style="background:linear-gradient(135deg,#1e1b4b,#6d28d9);">
+          <span class="ct-emoji">📖</span>
+          <div class="ct-cat">📚 Tuition</div>
+        </div>
+        <div class="card-body">
+          <div class="card-hd">
+            <div class="card-logo">📖</div>
+            <div class="card-ti">
+              <div class="card-name">Anju Ma'am Classes</div>
+              <div class="card-cat">Tuition Center</div>
+            </div>
+          </div>
+          <p class="card-desc">25+ years of CBSE excellence. Expert coaching for Classes 8–12 in Hindi & Social Science (SST), and Humanities for 11–12. Ghaziabad since 2001, 1500+ students mentored.</p>
+          <div class="card-meta">
+            <div class="cm"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Ghaziabad (2026–27 batches open)</div>
+            <div class="cm"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Classes 8–12 · CBSE Curriculum</div>
+          </div>
+          <div class="card-rating">
+            <div class="stars" aria-label="4.9 stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <span class="rscore">4.9</span><span class="rn">(1500+ students)</span>
+            <div class="vpill">✓ Verified</div>
+          </div>
+        </div>
+        <div class="card-foot">
+          <a href="https://anjumaam.thebrandsnap.in" target="_blank" rel="noopener" class="cb cb-g">🌐 Website</a>
+          <button class="cb cb-s" onclick="openProfile('anju-maam')">View Profile</button>
+        </div>
+      </article>
+
+      <!-- Manohar Sir -->
+      <article class="biz-card" data-cat="tuition" data-name="manohar sir cbse maths science chemistry biology ghaziabad coaching classes 8 9 10 11 12">
+        <div class="card-top" style="background:linear-gradient(135deg,#0c4a6e,#0369a1);">
+          <span class="ct-emoji">🔬</span>
+          <div class="ct-cat">📚 Tuition</div>
+        </div>
+        <div class="card-body">
+          <div class="card-hd">
+            <div class="card-logo">🔬</div>
+            <div class="card-ti">
+              <div class="card-name">Manohar Sir Classes</div>
+              <div class="card-cat">Tuition Center</div>
+            </div>
+          </div>
+          <p class="card-desc">30+ years of CBSE expertise in Maths, Science, Chemistry & Biology for Classes 8–12. Online & offline batches. Trusted by 3 generations of Ghaziabad families since 1996.</p>
+          <div class="card-meta">
+            <div class="cm"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Ghaziabad · Online & Offline</div>
+            <div class="cm"><svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>Classes 8–12 · CBSE Specialist</div>
+          </div>
+          <div class="card-rating">
+            <div class="stars" aria-label="4.8 stars"><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span></div>
+            <span class="rscore">4.8</span><span class="rn">(500+ students)</span>
+            <div class="vpill">✓ Verified</div>
+          </div>
+        </div>
+        <div class="card-foot">
+          <a href="https://manohar-sir.thebrandsnap.in" target="_blank" rel="noopener" class="cb cb-g">🌐 Website</a>
+          <button class="cb cb-s" onclick="openProfile('manohar-sir')">View Profile</button>
+        </div>
+      </article>
+
+    </div>
+
+    <div class="no-res" id="noResults">
+      <svg width="40" height="40" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" style="margin:0 auto;opacity:.3"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/></svg>
+      <p>No businesses match your search. Try a different keyword or category.</p>
+    </div>
+    <div class="lm-wrap">
+      <button class="lm-btn" onclick="loadMore()">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg>
+        Load More Businesses
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- BENEFITS -->
+<section class="section" aria-labelledby="why-title">
+  <div class="container">
+    <div style="margin-bottom:32px;">
+      <p class="eyebrow">Why Brand Snap</p>
+      <h2 class="stitle" id="why-title">Why Use Brand Snap Directory?</h2>
+      <p class="ssub">We make it simple to find, compare, and connect with trusted local businesses in Ghaziabad.</p>
+    </div>
+    <div class="ben-grid">
+      <div class="ben-card"><div class="ben-icon">✅</div><div class="ben-title">Verified Listings Only</div><p class="ben-desc">Every business goes through manual verification before listing. No fake entries, no spam — only real, trusted businesses.</p></div>
+      <div class="ben-card"><div class="ben-icon">📋</div><div class="ben-title">Detailed Business Profiles</div><p class="ben-desc">Complete info — hours, location, contacts, services, and reviews all in one place.</p></div>
+      <div class="ben-card"><div class="ben-icon">💬</div><div class="ben-title">WhatsApp Direct Contact</div><p class="ben-desc">Message any business on WhatsApp instantly from their profile. No hoops, no redirects.</p></div>
+      <div class="ben-card"><div class="ben-icon">⭐</div><div class="ben-title">Real Customer Reviews</div><p class="ben-desc">Genuine ratings from real customers help you make confident decisions before you visit.</p></div>
+      <div class="ben-card"><div class="ben-icon">🔍</div><div class="ben-title">Smart Search & Filters</div><p class="ben-desc">Find exactly what you need with category filters, keyword search, and sorting across all listings.</p></div>
+      <div class="ben-card"><div class="ben-icon">🌐</div><div class="ben-title">Direct Website Access</div><p class="ben-desc">One click to the business's own website for bookings, menus, or portfolios. No middleman.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<div class="cta-band">
+  <div class="container">
+    <div class="cta-i">
+      <h2>Own a Local Business in Ghaziabad?</h2>
+      <p>Get listed on Brand Snap and reach thousands of local customers looking for your services — fast, affordable, and professional.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/919811446304?text=Hi%20Brand%20Snap%2C%20I%20want%20to%20list%20my%20business%20on%20your%20directory." target="_blank" rel="noopener" class="cta-wa">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          WhatsApp Us to List Your Business
+        </a>
+        <a href="tel:+919811446304" class="cta-ph">📞 Call +91 98114 46304</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="foot-grid">
+    <div class="foot-brand">
+      <div class="foot-logo"><img src="logo.png" alt="Brand Snap" />BrandSnap</div>
+      <p>Helping local businesses in Ghaziabad build a strong digital presence and connect with more customers.</p>
+    </div>
+    <div class="foot-col">
+      <h4>Directory</h4>
+      <a href="#" onclick="setFilter('restaurants');scrollTo('#directory');return false;">Restaurants</a>
+      <a href="#" onclick="setFilter('tuition');return false;">Tuition Centers</a>
+      <a href="#" onclick="setFilter('salons');return false;">Salons & Beauty</a>
+      <a href="#" onclick="setFilter('shops');return false;">Shops & Retail</a>
+      <a href="#" onclick="setFilter('services');return false;">Services</a>
+      <a href="#" onclick="setFilter('healthcare');return false;">Healthcare</a>
+    </div>
+    <div class="foot-col">
+      <h4>Brand Snap</h4>
+      <a href="https://thebrandsnap.in/#about">About Us</a>
+      <a href="https://thebrandsnap.in/#services">Services</a>
+      <a href="https://thebrandsnap.in/packages.html">Packages</a>
+      <a href="https://thebrandsnap.in/#contact">Contact</a>
+      <a href="https://www.instagram.com/brandsnap.in" target="_blank" rel="noopener">@brandsnap.in</a>
+    </div>
+    <div class="foot-col">
+      <h4>Legal</h4>
+      <a href="https://thebrandsnap.in/privacy.html">Privacy Policy</a>
+      <a href="https://thebrandsnap.in/terms.html">Terms & Conditions</a>
+    </div>
+  </div>
+  <div class="foot-bottom">
+    <p>© 2025 Brand Snap · <a href="https://thebrandsnap.in">thebrandsnap.in</a> · Delhi NCR, India</p>
+    <p>Founded & built by Yashas Chaudhry</p>
+  </div>
+</footer>
+
+<!-- MODAL -->
+<div class="overlay" id="overlay" role="dialog" aria-modal="true" onclick="if(event.target===this)closeProfile()">
+  <div class="modal" id="modalInner"></div>
+</div>
+
+<script>
+const WA_SVG = '<svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>';
+
+const BIZ = {
+  'dal-cheeni':{name:'Dal Cheeni',cat:'Restaurant',emoji:'🍛',bg:'linear-gradient(135deg,#7c2d12,#b45309)',website:'https://dalcheeni.thebrandsnap.in',phone:'+91 98108 81161',wa:'https://wa.me/919810881161?text=Hi%20Dal%20Cheeni%2C%20I%20found%20you%20on%20Brand%20Snap%20directory.',location:'Shop No. 2, Plot KC-116, Sector 18, Kavi Nagar, Ghaziabad UP 201002',desc:'Dal Cheeni is a family-friendly dining restaurant in Kavi Nagar, Ghaziabad serving authentic North Indian, Chinese, and kebab cuisine. Known for signature dishes like Jalandhari mutton with khasta roti and veg keema pav, the restaurant offers a warm dining atmosphere with indoor seating, takeaway, home delivery, parking, and WiFi. Average cost approximately \u20B91,000 for two people.',hours:[['Monday','12:00 PM \u2013 11:00 PM'],['Tuesday','12:00 PM \u2013 11:00 PM'],['Wednesday','12:00 PM \u2013 11:00 PM'],['Thursday','12:00 PM \u2013 11:00 PM'],['Friday','12:00 PM \u2013 11:00 PM'],['Saturday','12:00 PM \u2013 11:00 PM'],['Sunday','12:00 PM \u2013 11:00 PM']],reviews:[{name:'Manisha Pandit',stars:'★★★★★',text:'Amazing food, amazing experience, amazing service! Specially veg momos and veg keema pav. And the gulkand ice cream was outstanding!'},{name:'Sahil Arora',stars:'★★★★★',text:'Jalandhari mutton with khasta roti is so goated. Can\'t believe it took me so long to visit. Totally underrated.'},{name:'Mansi Mittal',stars:'★★★★★',text:'A delightful dining experience! Food was fresh, flavorful, and beautifully presented. Perfect place for family meals.'}],faqs:[{q:'Is home delivery available?',a:'Yes — order via Zomato or Swiggy within the delivery radius.'},{q:'Do you have parking?',a:'Yes, parking is available at the restaurant.'},{q:'What is the average cost?',a:'Approximately \u20B91,000 for two people.'}]},
+  'devendra-sir':{name:'Devendra Sir Classes',cat:'Tuition Center',emoji:'📐',bg:'linear-gradient(135deg,#052e16,#15803d)',website:'https://homeschooling.thebrandsnap.in',phone:'+91 98713 16032',wa:'https://wa.me/919871316032?text=Hello%20Devendra%20Sir%2C%20I%20found%20your%20classes%20on%20Brand%20Snap%20and%20would%20like%20to%20enquire.',location:'Kavi Nagar, Ghaziabad',desc:'Devendra Sir offers expert CBSE Maths and Science tuition for Classes 6\u201310 in Kavi Nagar, Ghaziabad. With a concept-based, personalised teaching approach, classes are available in online, offline, and hybrid formats. Students receive regular tests, detailed notes, and dedicated doubt-clearing sessions to build strong foundations for board examinations.',hours:[['Monday','Morning & Evening Batches'],['Tuesday','Morning & Evening Batches'],['Wednesday','Morning & Evening Batches'],['Thursday','Morning & Evening Batches'],['Friday','Morning & Evening Batches'],['Saturday','Morning Batch'],['Sunday','Closed']],reviews:[{name:'Parent Review',stars:'★★★★★',text:'Devendra Sir\'s concept-based approach really helped my child understand Maths rather than just memorise. Highly recommended.'},{name:'Student Feedback',stars:'★★★★★',text:'The notes and regular tests make revision so much easier. My Science score improved from 72 to 91 in one term.'}],faqs:[{q:'Which classes are available?',a:'Classes 6 to 10, covering CBSE Maths and Science.'},{q:'Are online classes available?',a:'Yes \u2014 online, offline, and hybrid formats are all available.'},{q:'How do I enrol?',a:'WhatsApp or call Devendra Sir directly to schedule a free demo class.'}]},
+  'a-sons':{name:'A.Sons Exclusives',cat:'Watch Store',emoji:'⌚',bg:'linear-gradient(135deg,#1e1b4b,#4338ca)',website:'https://asons-exclusives.thebrandsnap.in/#trust',phone:'+91 97179 89108',wa:'https://wa.me/919717989108?text=Hello%20A.Sons%20Exclusives%2C%20I%20found%20you%20on%20Brand%20Snap%20and%20would%20like%20to%20know%20more%20about%20your%20watches.',location:'Ashok Nagar, Ghaziabad',desc:"A.Sons Exclusives is one of Ghaziabad's most trusted destinations for authentic premium and branded watches. Located in Ashok Nagar, the store has built its reputation on an unwavering commitment to authenticity and personalised customer guidance. With 90+ Google reviews and a 4.3\u2605 rating, every watch is 100% authentic. Expert staff help you find the perfect timepiece for every occasion and budget.",hours:[['Monday','10:00 AM \u2013 9:00 PM'],['Tuesday','10:00 AM \u2013 9:00 PM'],['Wednesday','10:00 AM \u2013 9:00 PM'],['Thursday','10:00 AM \u2013 9:00 PM'],['Friday','10:00 AM \u2013 9:00 PM'],['Saturday','10:00 AM \u2013 9:00 PM'],['Sunday','10:00 AM \u2013 9:00 PM']],reviews:[{name:'Google Reviewer',stars:'★★★★★',text:'Brilliant selection of watches and the staff really know their products. Got exactly what I was looking for. 100% authentic.'},{name:'Verified Customer',stars:'★★★★☆',text:'Great experience shopping here. The guidance was genuinely helpful with no pressure to buy. Will return.'}],faqs:[{q:'Are all watches 100% authentic?',a:'Yes \u2014 every watch sold at A.Sons Exclusives is guaranteed authentic.'},{q:'Do you offer WhatsApp consultations?',a:'Yes, WhatsApp them to enquire about specific brands or models before visiting.'}]},
+  'anju-maam':{name:"Anju Ma'am Classes",cat:'Tuition Center',emoji:'📖',bg:'linear-gradient(135deg,#1e1b4b,#6d28d9)',website:'https://anjumaam.thebrandsnap.in',phone:'+91 98118 46228',wa:'https://wa.me/919811846228?text=Hello%20Anju%20Maam%2C%20I%20found%20your%20classes%20on%20Brand%20Snap%20and%20would%20like%20to%20book%20a%20demo.',location:'Ghaziabad (2026\u201327 batches enrolling)',desc:"Anju Ma'am brings 25+ years of CBSE teaching excellence to students in Ghaziabad. Specialising in Hindi and Social Science (SST) for Classes 8\u201310, and Humanities subjects (History, Geography, Political Science) for Classes 11\u201312, her approach focuses on logical storytelling, visual timelines, and answer-writing skills rather than rote memorisation. Over 1,500 students mentored with a 98.4% top-score record. Batch sizes strictly limited to 10\u201315 students.",hours:[['Monday','Batch Timings Vary'],['Tuesday','Batch Timings Vary'],['Wednesday','Batch Timings Vary'],['Thursday','Batch Timings Vary'],['Friday','Batch Timings Vary'],['Saturday','Batch Timings Vary'],['Sunday','Closed']],reviews:[{name:'Parent (Class 10)',stars:'★★★★★',text:"Anju Ma'am's teaching method is unlike any other. My daughter went from struggling with SST to scoring 94 in boards. Truly exceptional."},{name:'Student (Class 12)',stars:'★★★★★',text:'The point-wise answer writing technique she teaches is exactly what board examiners want. My History and Geography scores improved massively.'}],faqs:[{q:"Which subjects does Anju Ma'am teach?",a:'Hindi (Course A & B), Social Science (SST) for Classes 8\u201310, and History, Geography, Political Science for Classes 11\u201312 Humanities.'},{q:'How many students per batch?',a:'Strictly 10\u201315 students per batch for personalised attention.'},{q:'How do I book a demo class?',a:'Call or WhatsApp +91 98118 46228 to schedule a free demo class.'}]},
+  'manohar-sir':{name:'Manohar Sir Classes',cat:'Tuition Center',emoji:'🔬',bg:'linear-gradient(135deg,#0c4a6e,#0369a1)',website:'https://manohar-sir.thebrandsnap.in',phone:'+91 98102 50842',wa:'https://wa.me/919810250842?text=Hello%20Manohar%20Sir%2C%20I%20found%20you%20on%20Brand%20Snap%20and%20would%20like%20to%20enquire%20about%20coaching%20classes.',location:'Ghaziabad \u00B7 Online & Offline Classes',desc:"Manohar Sir is one of Ghaziabad's most trusted CBSE educators with 30+ years of teaching experience. Expert coaching for Classes 8\u201312 in Mathematics, Science, Chemistry, and Biology \u2014 online and offline. Trusted by three generations of Ghaziabad families since 1996, his approach builds concepts first, then confidence, so marks follow naturally. Small batches, regular tests, notes, and dedicated doubt sessions.",hours:[['Monday','Online & Offline Batches'],['Tuesday','Online & Offline Batches'],['Wednesday','Online & Offline Batches'],['Thursday','Online & Offline Batches'],['Friday','Online & Offline Batches'],['Saturday','Online & Offline Batches'],['Sunday','Closed']],reviews:[{name:'Parent (3rd generation)',stars:'★★★★★',text:"Our family has been with Manohar Sir for three generations. His dedication and clarity of teaching is unmatched. Children consistently score above 90%."},{name:'Class 12 Student',stars:'★★★★★',text:"Chemistry was my weakest subject. After joining Manohar Sir's batch, I scored 88 in boards. His concept-building approach is brilliant."}],faqs:[{q:'Which subjects are taught?',a:'Mathematics, Science, Chemistry, and Biology for CBSE Classes 8\u201312.'},{q:'Are online classes available?',a:'Yes \u2014 both online and offline batches are available throughout the year.'},{q:'How do I join?',a:'WhatsApp or call +91 98102 50842 to book a free demo class.'}]}
+};
+
+let activeFilter='all', activeSearch='';
+
+function setFilter(cat, el) {
+  activeFilter = cat;
+  document.querySelectorAll('.hpill').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.ftab').forEach(b=>b.classList.remove('active'));
+  if (el) {
+    el.classList.add('active');
+    if (el.classList.contains('hpill')) document.querySelectorAll('.ftab[data-filter="'+cat+'"]').forEach(b=>b.classList.add('active'));
+    if (el.classList.contains('ftab')) document.querySelectorAll('.hpill').forEach(b=>{ if(b.textContent.toLowerCase().includes(cat)||(cat==='all'&&b.textContent.includes('All'))) b.classList.add('active'); });
+  }
+  applyFilters();
+  if (el && el.classList.contains('ftab')) document.getElementById('directory').scrollIntoView({behavior:'smooth',block:'start'});
+}
+
+function doSearch() {
+  activeSearch = document.getElementById('searchInput').value.toLowerCase().trim();
+  applyFilters();
+  if(activeSearch) document.getElementById('directory').scrollIntoView({behavior:'smooth'});
+}
+document.getElementById('searchInput').addEventListener('keydown', e=>{ if(e.key==='Enter') doSearch(); });
+
+function applyFilters() {
+  const cards = document.querySelectorAll('#bizGrid .biz-card');
+  let n=0;
+  cards.forEach(c=>{
+    const ok = (activeFilter==='all'||c.dataset.cat===activeFilter) && (!activeSearch||c.dataset.name.includes(activeSearch));
+    c.style.display = ok?'':'none';
+    if(ok) n++;
+  });
+  document.getElementById('bizCount').textContent='Showing '+n+' business'+(n!==1?'es':'');
+  document.getElementById('noResults').style.display = n===0?'block':'none';
+}
+
+function loadMore() {
+  const b=document.querySelector('.lm-btn');
+  b.innerHTML='&#10003;&nbsp; All listings loaded';
+  b.disabled=true; b.style.opacity='.4'; b.style.cursor='default';
+}
+
+function openProfile(key) {
+  const p=BIZ[key]; if(!p) return;
+  const hrs=p.hours.map(([d,t])=>`<div class="hrow"><span>${d}</span><span>${t}</span></div>`).join('');
+  const rvs=p.reviews.map(r=>`<div class="rv"><div class="rv-name">${r.name}</div><div class="rv-stars">${r.stars}</div><div class="rv-text">${r.text}</div></div>`).join('');
+  const fqs=p.faqs.map(f=>`<div class="fq"><div class="fq-q">Q: ${f.q}</div><div class="fq-a">${f.a}</div></div>`).join('');
+  document.getElementById('modalInner').innerHTML=`
+    <div class="m-hero" style="background:${p.bg}">
+      <button class="m-close" onclick="closeProfile()" aria-label="Close">&#10005;</button>
+      <div class="m-id">
+        <div class="m-logobox">${p.emoji}</div>
+        <div><div class="m-biz-name">${p.name}</div><div class="m-biz-cat">${p.cat} &middot; Ghaziabad</div></div>
+      </div>
+    </div>
+    <div class="m-body">
+      <div class="m-sec"><div class="m-sec-t">About</div><p>${p.desc}</p></div>
+      <div class="m-sec">
+        <div class="m-sec-t">Contact & Location</div>
+        <div class="ig">
+          <div class="ibox"><div class="l">Address</div><div class="v">${p.location}</div></div>
+          <div class="ibox"><div class="l">Phone</div><div class="v">${p.phone}</div></div>
+          <div class="ibox"><div class="l">Website</div><div class="v" style="font-size:.74rem">${p.website}</div></div>
+          <div class="ibox"><div class="l">Category</div><div class="v">${p.cat}</div></div>
+        </div>
+        <div class="map-ph"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>${p.location}</div>
+      </div>
+      <div class="m-sec"><div class="m-sec-t">Business Hours</div><div class="hlist">${hrs}</div></div>
+      <div class="m-sec"><div class="m-sec-t">Customer Reviews</div>${rvs}</div>
+      <div class="m-sec"><div class="m-sec-t">FAQs</div>${fqs}</div>
+      <div class="m-actions">
+        <a href="${p.wa}" target="_blank" rel="noopener" class="mb-wa">${WA_SVG} WhatsApp</a>
+        <a href="${p.website}" target="_blank" rel="noopener" class="mb-web">&#127760; Visit Website</a>
+        <button class="mb-cl" onclick="closeProfile()">&#10005; Close</button>
+      </div>
+    </div>`;
+  document.getElementById('overlay').classList.add('open');
+  document.body.style.overflow='hidden';
+}
+
+function closeProfile() {
+  document.getElementById('overlay').classList.remove('open');
+  document.body.style.overflow='';
+}
+document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeProfile(); });
+</script>
+</body>
+</html>
